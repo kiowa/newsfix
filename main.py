@@ -10,7 +10,7 @@ import GoogleReader.reader
 from GoogleReader.const import CONST
 
 
-class Main:
+class Main:    
     def main(self):
         self.reader = GoogleReader.reader.GoogleReader()
         self.setupGui()
@@ -76,6 +76,8 @@ class Main:
         self.createHtml()
         self.createPreview()
         self.webFrame.print_(self.getSelectedPrinter())
+        if (self.mainWindow.markReadItems.isChecked()):
+            self.markPrintedArticlesAsRead()
         
     
     def slotPreview(self):
@@ -83,6 +85,12 @@ class Main:
         self.createPreview()
         self.showPreview()
 
+
+    def markPrintedArticlesAsRead(self):
+        for entry in self.unread:
+            print "Marking entry as read: %s" % entry
+            self.reader.set_read(entry['google_id'])
+        
 
     def getEntries(self):
         content = []
@@ -101,11 +109,13 @@ class Main:
 
 
     def createHtml(self):
+        self.unread = []
         html = u"<html><head></head><body>"
         for entry in self.getEntries():
             html = html + u"<h1>%s</h1>" % entry["title"]
             html = html + u"<i>%s %s</i><br />" % (entry["author"], entry["link"])
             html = html + entry["content"]
+            self.unread.append(entry)
         html = html + u"</body></html>"
         self.html = html
 
