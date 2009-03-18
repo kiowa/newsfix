@@ -23,13 +23,18 @@ class Main:
         self.loginWindow = QDialog()
 
         self.window = QMainWindow()
+        self.window.setWindowIcon(QIcon("icons/Newspaper-Feed.ico"))
         self.mainWindow = Ui_MainWindow()
         self.mainWindow.setupUi(self.window)
 
         self.loginDialog = Ui_LoginDialog()
         self.loginDialog.setupUi(self.loginWindow)    
         self.setupPrinters()
+        self.setupSettings()
         #self.loginWindow.setParent(self.window)
+
+    def setupSettings(self):
+        pass
 
     def setupPrinters(self):
         printers = QPrinterInfo.availablePrinters()
