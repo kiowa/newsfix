@@ -8,8 +8,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>667</width>
-    <height>446</height>
+    <width>433</width>
+    <height>483</height>
    </rect>
   </property>
   <property name="sizePolicy" >
@@ -75,7 +75,7 @@
             <item>
              <widget class="QCheckBox" name="sendToPrinter" >
               <property name="text" >
-               <string>Automatically send to printer</string>
+               <string>Auto send to printer</string>
               </property>
               <property name="checked" >
                <bool>true</bool>
@@ -120,8 +120,8 @@
           </property>
           <property name="sizeHint" stdset="0" >
            <size>
-            <width>308</width>
-            <height>20</height>
+            <width>63</width>
+            <height>130</height>
            </size>
           </property>
          </spacer>
@@ -168,7 +168,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>667</width>
+     <width>433</width>
      <height>22</height>
     </rect>
    </property>

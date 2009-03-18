@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'main.ui'
 #
-# Created: Tue Mar 17 22:24:43 2009
+# Created: Wed Mar 18 12:32:40 2009
 #      by: PyQt4 UI code generator 4.4.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -13,7 +13,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setWindowModality(QtCore.Qt.NonModal)
-        MainWindow.resize(667, 446)
+        MainWindow.resize(433, 483)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -70,7 +70,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.addWidget(self.maxArticles)
         self.verticalLayout.addLayout(self.horizontalLayout_3)
         self.horizontalLayout_4.addLayout(self.verticalLayout)
-        spacerItem = QtGui.QSpacerItem(308, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        spacerItem = QtGui.QSpacerItem(63, 130, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         self.horizontalLayout_4.addItem(spacerItem)
         self.gridLayout.addLayout(self.horizontalLayout_4, 1, 0, 1, 1)
         self.horizontalLayout_5 = QtGui.QHBoxLayout()
@@ -87,7 +87,7 @@ class Ui_MainWindow(object):
         self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 667, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 433, 22))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtGui.QStatusBar(MainWindow)
@@ -101,7 +101,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "Google Reader Newspaper", None, QtGui.QApplication.UnicodeUTF8))
         self.markReadItems.setText(QtGui.QApplication.translate("MainWindow", "Mark printed items as read in my Google Reader", None, QtGui.QApplication.UnicodeUTF8))
         self.deliveryTimeLabel.setText(QtGui.QApplication.translate("MainWindow", "Print my newspaper at", None, QtGui.QApplication.UnicodeUTF8))
-        self.sendToPrinter.setText(QtGui.QApplication.translate("MainWindow", "Automatically send to printer", None, QtGui.QApplication.UnicodeUTF8))
+        self.sendToPrinter.setText(QtGui.QApplication.translate("MainWindow", "Auto send to printer", None, QtGui.QApplication.UnicodeUTF8))
         self.label.setText(QtGui.QApplication.translate("MainWindow", "Maximum articles per blog to print", None, QtGui.QApplication.UnicodeUTF8))
         self.printButton.setText(QtGui.QApplication.translate("MainWindow", "Print now", None, QtGui.QApplication.UnicodeUTF8))
         self.previewButton.setText(QtGui.QApplication.translate("MainWindow", "Preview...", None, QtGui.QApplication.UnicodeUTF8))
